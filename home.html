@@ -14,7 +14,7 @@
         body, h1 {
             margin: 0;
             padding: 0;
-            background-color: rgb(244, 165, 165);
+            background-color: rgb(228,110,110);
         }
         body{
             background-image: url(aboutUsBg.png);
@@ -30,26 +30,36 @@
             margin: 0 auto;
             padding: 20px;
         }
-
-        /* Navigation */
+        header {
+                font-family: Arial, sans-serif;
+                background-color: rgba(255, 255, 255, 0.5);
+                color: #fff;
+                margin-top: 20px;
+                padding: 30px;
+                border-radius: 10px;
+                display: flex;/*flexible gap between text*/
+                justify-content: space-between;
+                align-items: center;
+        }
+        header:hover 
+        {
+            background-color: rgb(188, 65, 65);
+        }
+        header:hover .nav-link,header:hover #contact,header:hover #support,header:hover span 
+        {
+            color: rgba(255, 255, 255, 0.75); 
+        }
         nav {
-            background-color: rgb(188,65,65);
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            position: fixed;
-            width: 100%;
-            display:flex;
-            justify-content: space-around;
-
+            display: flex;
+            gap: 50px; /*gap between text*/
         }
-        .navbar{
-            margin-top: 20px;
-        }
-        nav a {
-            color: #fff;
+        .nav-link {
             text-decoration: none;
-            font-size: 25px;
+            color: #000000;
+            transition: color 0.2s; 
+        }
+        .nav-link:hover {
+            color: #090081; /* Change text color on hover */
         }
 
         /* Header */
@@ -64,11 +74,23 @@
         }
 
         /* Main Content */
-        .main-content {
-            background-color: #f9f9f9;
+        .main-content1 {
+            background-color: rgba(188, 65, 65,0.5);
             padding: 30px;
             border-radius: 20px;
             margin-bottom: 20px;
+            border: 2px solid white;
+            font-family: 'Roboto', sans-serif;
+        }
+        .main-content2 {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: rgba(188, 65, 65,0.5);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            border: 2px solid white;
+            font-family: 'Roboto', sans-serif;
         }
 
         /* Footer */
@@ -90,17 +112,99 @@
   .faq-answer {
     display: none;
     padding-left: 20px;
-    background-color: #f9f9f9;
+    background-color: rgb(228,110,110) ;
     border-radius: 20px;
 
   }
   .section{
-    background-color: #f9f9f9;
+    background-color:rgba(188, 65, 65,0.5) ;
     border-radius: 20px;
   }
   a:hover{
     text-decoration: underline;
   }
+  .title{
+    color:rgb(188,65,65) ;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(188, 65, 65);
+  }
+  .img1{
+            mix-blend-mode: hard-light;
+            
+            margin-left: 40%;
+            height: 400px;
+            width: 400px;
+            float: right;
+            margin-right: 30%;
+        }
+        .women2{
+            mix-blend-mode: hard-light;
+            height: 400px;
+            width: 1000px;
+            margin-left: 100px;
+            border-radius: 20px;
+        }
+        .welcometech{
+            font-size: 50px;
+            color: rgb(222, 147, 147);
+            text-shadow: 2px 2px 5px rgb(70, 41, 41);
+            justify-content: baseline;
+        }
+        .image-container {
+  display: flex;
+}
+
+.image {
+  flex: 1;
+  margin: 0 10px; /* Adjust margin as needed */
+}
+
+/* Apply mix-blend-mode to the first and last images */
+.image:first-child img,
+.image:last-child img {
+  mix-blend-mode: color-burn;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+.Wing{
+    mix-blend-mode: color-burn;
+}
+.col1{
+    display: flex;
+            flex-grow: 1; 
+            padding: 5px;
+            border: 1px solid #ccc;
+            height: 400px;
+            padding: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+            background-color: rgba(255, 255, 255, 0.5);
+            flex-direction: column;
+            border-radius: 20px;
+            justify-content: baseline;
+            margin-bottom: 50px;
+            color: black;
+}
+.main_title{
+    color: rgb(188, 65, 65);
+    font-size: 40px;
+    text-shadow: 2px 2px 5px rgb(188, 65, 65);
+}
+.main_title2{
+    color: rgb(222, 147, 147);
+    font-size: 40px;
+    text-shadow: 2px 2px 5px rgb(188, 65, 65);
+
+}
+
+
+
+        
   
         </style>
         <script>
@@ -121,20 +225,45 @@
         </script>
     </head>
     <body>
-        <div class="navbar">
+        <header class="mx-4">
+     
+
             <nav>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Contact</a>
+              <a href="" class="nav-link" >About Us</a>
+              <a href="" class="nav-link" >Mentorship</a>
+              <a href="" class="nav-link">Sign In</a>
+              <a href="" class="nav-link">Contact Us</a>
+    
+          
             </nav>
-        </div>
+          
+          
+          
+          </header>
+
         <div class="container">
-            <header>
-                <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 60px; background:none;">FemmeInTech</h1>
-            </header>
-            <div class="main-content">
-                <h2 align="center">Welcome Techies</h2>
+            <div class="FIT">
+                <h1 class="title">FemmeInTech</h1>
+                <div class="image-container">
+                    <div class="image">
+                      <img src="Leftw.png" alt="Image 1" class="Wing">
+                    </div>
+                    <div class="image">
+                      <img src="Logo.png" alt="Image 2">
+                    </div>
+                    <div class="image">
+                      <img src="Rightw.png" alt="Image 3" class="Wing">
+                    </div>
+                  </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="main-content1">
+                <h2 align="center" class="welcometech">Welcome Techies</h2>
                 <p align="center">
                     Welcome to FemmeinTech, your all-in-one platform designed to empower women in the dynamic field of technology. We understand the unique challenges and opportunities that women face in this ever-evolving industry, and we're here to provide the support and resources needed to succeed.
 
@@ -145,8 +274,11 @@
                 Join us on FemmeinTech and become part of a vibrant community dedicated to empowering women in tech. Together, we can break down barriers, bridge the gender gap, and shape a more inclusive future for the tech industry.
                 </p>
             </div>
-            <div class="main-content">
-                <h2 align="center">Who are we?</h2>
+            <div>
+                <img src="Picture.png" alt="" class="women2">
+            </div>
+            <div class="main-content1">
+                <h2 align="center" class="main_title2">Who are we?</h2>
                 <p align="center">
                     FemmeinTech is more than just a platform – we're a movement dedicated to driving change in the tech industry. Founded by a passionate team of tech enthusiasts and advocates for gender diversity, we're committed to creating a world where women can thrive and succeed in technology.
 
@@ -155,42 +287,30 @@
                 At FemmeinTech, we're not just building a platform – we're building a community. A community where women can come together to share knowledge, offer support, and inspire one another to reach new heights in their tech careers. We're here to celebrate successes, overcome challenges, and champion each other's achievements every step of the way.
                 </p>
             </div>
-            <div class="main-content">
-                <h2 align="center">Our Mission</h2>
+            <div class="main-content2">
+            <div class="col1">
+                <h2 align="center" class="main_title">Our Mission</h2>
                 <p align="center">
-                    Our mission at FemmeinTech is simple yet powerful: to empower women in technology. We believe that by providing a single platform that offers both mentorship opportunities and community support, we can create a more inclusive and equitable tech industry.
-
-                Through our platform, we strive to break down barriers and bridge the gender gap in technology. We're committed to providing women with the resources, connections, and opportunities they need to thrive in this fast-paced and dynamic field.
-                
-                At the heart of our mission is a dedication to fostering a supportive and inclusive community where women can connect, learn, and grow together. Whether you're a seasoned professional looking to mentor the next generation of tech talent or a newcomer seeking guidance and support, [Platform Name] is here to help you achieve your goals and aspirations in technology.
-                
-                Join us in our mission to empower women in tech and together, let's shape a brighter and more inclusive future for the tech industry.
+                    
+At FemmeinTech, 
+our mission is clear: empower women in technology.
+ By offering mentorship and community support on a single platform, we aim to create a more inclusive industry.
+  We're dedicated to breaking barriers, bridging the gender gap, and providing resources for women to thrive in tech.
+   Join our supportive community to connect, learn, and grow together. 
+   Together, let's shape a brighter future for the tech industry.
                 </p>
             </div>
-            <div class="main-content">
-                <h2 align="center">What do we offer?</h2>
+            <div class="col1">
+                <h2 align="center" class="main_title">What do we offer?</h2>
                 <p align="center">
-                    At [Platform Name], we offer a comprehensive range of features designed to empower women in technology and support their career advancement. Here are just a few of the key features that set us apart:
-
-                Mentorship Opportunities: Connect with experienced mentors who can provide guidance, advice, and support as you navigate your tech career.
-                
-                Community Support: Join a vibrant community of women in tech where you can share experiences, ask questions, and offer support to fellow members.
-                
-                Networking Events: Attend networking events, workshops, and meetups to expand your professional network and connect with industry leaders and experts.
-                
-                Resource Hub: Access a wealth of resources, including articles, guides, webinars, and tools, to support your growth and development in tech.
-                
-                Personalized Profiles: Create a personalized profile that showcases your skills, interests, and career goals, making it easier to connect with mentors and peers who share your passions.
-                
-                Interactive Forums: Engage in discussions and share knowledge with fellow members through our interactive forums and discussion boards.
-                
-                Continual Learning: Stay updated with the latest trends, developments, and best practices in technology through our curated content and learning resources.
-                
-                Empowering Events: Participate in empowerment events and initiatives aimed at promoting diversity, inclusion, and gender equality in the tech industry.
-                
-                These are just a few of the features that make FemmeinTech the ultimate destination for women in tech. Join us today and take the first step towards empowering your tech career.
+                    
+At FemmeInTech,
+ we provide essential resources to empower women in technology and enhance their career progression.
+  Benefit from mentorship opportunities, a supportive community, networking events, a comprehensive resource hub, personalized profiles, interactive forums, continual learning, and empowering events.
+   Join FemmeinTech today and advance your tech career with us.
                 </p>
             </div>
+        </div>
             <div id="faq" class="section">
                 <div class="container">
                     <h2 class="section-title">FAQs</h2>
