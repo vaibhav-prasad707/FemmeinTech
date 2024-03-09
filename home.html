@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Web Page</title>
+        <link rel="stylesheet" href="bootstrap.css">
+        <style>
+        /* Reset default margin and padding */
+        *{
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        body, h1 {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(244, 165, 165);
+        }
+        body{
+            background-image: url(aboutUsBg.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 90%;
+            background-attachment: fixed;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: rgb(188,65,65);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            display:flex;
+            justify-content: space-around;
+
+        }
+        .navbar{
+            margin-top: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 25px;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        /* Main Content */
+        .main-content {
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: rgb(188,65,65);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .faq-item {
+    margin-bottom: 20px;
+  }
+
+  .faq-question {
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .faq-answer {
+    display: none;
+    padding-left: 20px;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+
+  }
+  .section{
+    background-color: #f9f9f9;
+    border-radius: 20px;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+  
+        </style>
+        <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const faqQuestions = document.querySelectorAll('.faq-question');
+          
+          faqQuestions.forEach(function (question) {
+            question.addEventListener('click', function () {
+              const answer = this.nextElementSibling;
+              if (answer.style.display === 'block') {
+                answer.style.display = 'none';
+              } else {
+                answer.style.display = 'block';
+              }
+            });
+          });
+        });
+        </script>
+    </head>
+    <body>
+        <div class="navbar">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+        <div class="container">
+            <header>
+                <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 60px; background:none;">FemmeInTech</h1>
+            </header>
+            <div class="main-content">
+                <h2 align="center">Welcome Techies</h2>
+                <p align="center">
+                    Welcome to FemmeinTech, your all-in-one platform designed to empower women in the dynamic field of technology. We understand the unique challenges and opportunities that women face in this ever-evolving industry, and we're here to provide the support and resources needed to succeed.
+
+                At FemmeinTech, we believe in the power of community and mentorship to drive positive change. Whether you're a seasoned professional or just starting your journey in tech, our platform offers a welcoming space where you can connect, learn, and grow alongside like-minded individuals.
+                
+                Through our comprehensive range of features and initiatives, we aim to foster a supportive ecosystem where women can thrive and excel. From mentorship opportunities to networking events and resource hubs, we're committed to providing the tools and support needed to advance your career in technology.
+                
+                Join us on FemmeinTech and become part of a vibrant community dedicated to empowering women in tech. Together, we can break down barriers, bridge the gender gap, and shape a more inclusive future for the tech industry.
+                </p>
+            </div>
+            <div class="main-content">
+                <h2 align="center">Who are we?</h2>
+                <p align="center">
+                    FemmeinTech is more than just a platform – we're a movement dedicated to driving change in the tech industry. Founded by a passionate team of tech enthusiasts and advocates for gender diversity, we're committed to creating a world where women can thrive and succeed in technology.
+
+                As a team, we bring together diverse backgrounds and experiences, united by a shared vision of empowerment and inclusion. From software engineers to entrepreneurs, our collective expertise drives our mission to provide women with the support and opportunities they need to succeed in tech.
+                
+                At FemmeinTech, we're not just building a platform – we're building a community. A community where women can come together to share knowledge, offer support, and inspire one another to reach new heights in their tech careers. We're here to celebrate successes, overcome challenges, and champion each other's achievements every step of the way.
+                </p>
+            </div>
+            <div class="main-content">
+                <h2 align="center">Our Mission</h2>
+                <p align="center">
+                    Our mission at FemmeinTech is simple yet powerful: to empower women in technology. We believe that by providing a single platform that offers both mentorship opportunities and community support, we can create a more inclusive and equitable tech industry.
+
+                Through our platform, we strive to break down barriers and bridge the gender gap in technology. We're committed to providing women with the resources, connections, and opportunities they need to thrive in this fast-paced and dynamic field.
+                
+                At the heart of our mission is a dedication to fostering a supportive and inclusive community where women can connect, learn, and grow together. Whether you're a seasoned professional looking to mentor the next generation of tech talent or a newcomer seeking guidance and support, [Platform Name] is here to help you achieve your goals and aspirations in technology.
+                
+                Join us in our mission to empower women in tech and together, let's shape a brighter and more inclusive future for the tech industry.
+                </p>
+            </div>
+            <div class="main-content">
+                <h2 align="center">What do we offer?</h2>
+                <p align="center">
+                    At [Platform Name], we offer a comprehensive range of features designed to empower women in technology and support their career advancement. Here are just a few of the key features that set us apart:
+
+                Mentorship Opportunities: Connect with experienced mentors who can provide guidance, advice, and support as you navigate your tech career.
+                
+                Community Support: Join a vibrant community of women in tech where you can share experiences, ask questions, and offer support to fellow members.
+                
+                Networking Events: Attend networking events, workshops, and meetups to expand your professional network and connect with industry leaders and experts.
+                
+                Resource Hub: Access a wealth of resources, including articles, guides, webinars, and tools, to support your growth and development in tech.
+                
+                Personalized Profiles: Create a personalized profile that showcases your skills, interests, and career goals, making it easier to connect with mentors and peers who share your passions.
+                
+                Interactive Forums: Engage in discussions and share knowledge with fellow members through our interactive forums and discussion boards.
+                
+                Continual Learning: Stay updated with the latest trends, developments, and best practices in technology through our curated content and learning resources.
+                
+                Empowering Events: Participate in empowerment events and initiatives aimed at promoting diversity, inclusion, and gender equality in the tech industry.
+                
+                These are just a few of the features that make FemmeinTech the ultimate destination for women in tech. Join us today and take the first step towards empowering your tech career.
+                </p>
+            </div>
+            <div id="faq" class="section">
+                <div class="container">
+                    <h2 class="section-title">FAQs</h2>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <div class="faq-question">How do I sign up for mentorship on FemmeinTech?</div>
+                            <div class="faq-answer">
+                                <p>Signing up for mentorship on FemmeinTech is easy! Simply create an account on our platform, fill out your profile with information about your background, interests, and career goals, and indicate that you're interested in being matched with a mentor. Our algorithm will then find a suitable mentor based on your preferences and profile information.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">Can I be both a mentor and a mentee on FemmeinTech?</div>
+                            <div class="faq-answer">
+                                <p>Absolutely! We encourage members of our community to both give and receive mentorship. Whether you're an experienced professional looking to share your knowledge and expertise or someone who could benefit from guidance and support, there's a place for you on FemmeinTech.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question"> How do I participate in the online community on FemmeinTech?</div>
+                            <div class="faq-answer">
+                                <p>To participate in the online community on FemmeinTech, simply join our platform and start engaging with other members! You can join discussions in our forums, connect with other members through private messaging, and participate in group events and activities.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">Are there any fees associated with using FemmeinTech?</div>
+                            <div class="faq-answer">
+                                <p>No, FemmeinTech is completely free to use for all members. We believe that everyone should have access to the support and resources they need to succeed in tech, regardless of their financial situation.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">How can I get involved with FemmeinTech's events and initiatives?</div>
+                            <div class="faq-answer">
+                                <p>Stay tuned to our platform and social media channels for announcements about upcoming events and initiatives. You can also reach out to our team if you're interested in volunteering or partnering with us on a project.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <p>&copy; 2024 Your Company. All rights reserved.</p>
+            </footer>
+        </body>
+    </html>
