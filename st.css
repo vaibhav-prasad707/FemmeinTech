@@ -30,7 +30,6 @@ body::after {
 }
 
 section {
-  position: relative;
   z-index: 3;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -192,4 +191,39 @@ section {
   .contact-form {
     width: 100%;
   }
+}
+header {
+  font-family: Arial, sans-serif;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+  margin-top: 20px;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;/*flexible gap between text*/
+  justify-content: space-between;
+  align-items: center;
+}
+header:hover 
+{
+background-color: rgb(188, 65, 65);
+}
+header:hover .nav-link,header:hover #contact,header:hover #support,header:hover span 
+{
+color: rgba(255, 255, 255, 0.75); 
+}
+
+.logo {
+margin-right: auto;
+}
+nav {
+display: flex;
+gap: 50px; /*gap between text*/
+}
+.nav-link {
+text-decoration: none;
+color: #000000;
+transition: color 0.2s; 
+}
+.nav-link:hover {
+color: #090081; /* Change text color on hover */
 }
